@@ -2,10 +2,16 @@
 @addTagHelper "*, Microsoft.AspNet.Mvc.TagHelpers"
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-	
+
 <div class="container">	
-	<form asp-controller="Student" asp-action="Create" method="post" asp-anti-forgery="true">  
-	    <div asp-validation-summary="ValidationSummary.ModelOnly">
+	<form 
+		asp-controller="Student" 
+		asp-action="Create"
+		method="post" 
+		asp-anti-forgery="true">  
+	    <div 
+			asp-validation-summary="ValidationSummary.ModelOnly">
+			
 	    <div class="form-group">
 	        <label asp-for="Name"></label>
 	        <input asp-for="Name" class="form-control" />
